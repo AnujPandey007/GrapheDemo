@@ -30,9 +30,9 @@ class _HomState extends State<Hom> {
     Response response = await get("https://www.postman.com/collections/e16b64ed51d98f7be09f");
     //List data = jsonDecode(response.body);
     this.setState(() { 
-      var corona = jsonDecode(response.body);
-      data = corona["item"];
-      bata = corona;
+      var dat = jsonDecode(response.body);
+      data = dat["item"];
+      bata = dat;
     });
   
   }
@@ -75,15 +75,7 @@ class _HomState extends State<Hom> {
                           fontWeight: FontWeight.bold
                         ),
                       ),
-                      Text("Postman ID"),
-                      Text(
-                        (data[index+1]["_postman_id"].toString()),
-                        style: TextStyle(
-                          fontSize: 14.0,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold
-                        ),
-                      ),
+                      Text("Tap on Shoping Button")
                     ],
                   )
                 )

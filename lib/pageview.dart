@@ -5,6 +5,7 @@ import 'package:graphedemo/item3.dart';
 import 'package:graphedemo/item4.dart';
 import 'package:graphedemo/item5.dart';
 import 'package:graphedemo/item6.dart';
+import 'package:graphedemo/product.dart';
  
 class Home extends StatefulWidget {
   @override
@@ -21,7 +22,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: PageView(
-        children: <Widget>[       
+        children: <Widget>[  
           Item1(),
           Item2(),
           Item3(),

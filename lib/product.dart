@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:graphedemo/loading.dart';
 import 'package:http/http.dart';
 
-class Item1 extends StatefulWidget {
+class MyHomePage extends StatefulWidget {
 
 
-  Item1({Key key, this.title}) : super(key: key);
+  MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _Item1State createState() => _Item1State();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _Item1State extends State<Item1> {
+class _MyHomePageState extends State<MyHomePage> {
 
   Map data;
 
@@ -64,7 +64,7 @@ class _Item1State extends State<Item1> {
                     appBar(),
                     Image.asset(
                       "assets/images/camera.png",
-                      height: 320.0,
+                      height: 350.0,
                       width: double.infinity,
                     ), //This
                     // should be a paged
